@@ -1,0 +1,100 @@
+const initialProducts = [
+  {
+    id: 'prod-1',
+    sku: 'CM-AUD-001',
+    nameAr: 'سماعة الرأس اللاسلكية C-Pulse Pro عازلة للضوضاء',
+    nameEn: 'C-Pulse Pro Wireless ANC Studio Headphones',
+    brand: 'SonicWave',
+    category: 'electronics',
+    price: 4250,
+    originalPrice: 5400,
+    stock: 24,
+    rating: 4.9,
+    reviewsCount: 184,
+    featured: true,
+    badgeAr: 'الأكثر مبيعاً',
+    badgeEn: 'Best Seller',
+    descriptionAr: 'سماعة احترافية بتقنية العزل النشط للضوضاء الهجين (Hybrid ANC) مع بطارية تدوم حتى 45 ساعة وصوت محيطي فائق النقاء.',
+    descriptionEn: 'Studio-grade hybrid active noise canceling headphones with 45-hour battery life, spatial audio, and plush memory foam earcups.'
+  },
+  {
+    id: 'prod-2',
+    sku: 'CM-MOB-002',
+    nameAr: 'باقة الهاتف الذكي التيتانيوم X15 Pro مع الساعة الذكية',
+    nameEn: 'Titanium X15 Pro Flagship Smartphone + SmartWatch Bundle',
+    brand: 'NovaTech',
+    category: 'phones',
+    price: 38900,
+    originalPrice: 44500,
+    stock: 12,
+    rating: 4.9,
+    reviewsCount: 142,
+    featured: true,
+    badgeAr: 'عرض حصري',
+    badgeEn: 'Bundle Deal',
+    descriptionAr: 'ثنائي القوة والأناقة: هاتف ذكي بهيكل تيتانيوم وشاشة AMOLED بتردد 120Hz مع ساعة ذكية رياضية مقاومة للماء لتتبع اللياقة والصحة.',
+    descriptionEn: 'Flagship titanium smartphone featuring a 120Hz LTPO AMOLED display paired with a GPS fitness smartwatch.'
+  },
+  {
+    id: 'prod-3',
+    sku: 'CM-LAP-003',
+    nameAr: 'لابتوب ألترا بوك C-Book Air M3 مع ماوس لاسلكي احترافي',
+    nameEn: 'C-Book Air Ultra-Slim Laptop 14" + Ergonomic Mouse',
+    brand: 'AeroCompute',
+    category: 'laptops',
+    price: 46500,
+    originalPrice: 51000,
+    stock: 9,
+    rating: 4.8,
+    reviewsCount: 97,
+    featured: true,
+    badgeAr: 'جديد 2026',
+    badgeEn: 'New Arrival',
+    descriptionAr: 'لابتوب فائق النحافة بهيكل ألومنيوم متين، رام 16 جيجابايت وهارد 1 تيرابايت NVMe SSD مع ماوس لاسلكي مريح لليد.',
+    descriptionEn: 'Ultra-thin CNC aluminum laptop with 16GB unified memory, 1TB NVMe SSD, 18-hour battery, and wireless ergonomic mouse.'
+  },
+  {
+    id: 'prod-4',
+    sku: 'CM-APP-004',
+    nameAr: 'ماكينة الإسبريسو والكابتشينو الأوتوماتيكية Barista Master',
+    nameEn: 'Barista Master Automatic Espresso & Cappuccino Maker',
+    brand: 'CasaBrew',
+    category: 'appliances',
+    price: 14800,
+    originalPrice: 17900,
+    stock: 15,
+    rating: 4.7,
+    reviewsCount: 118,
+    featured: true,
+    badgeAr: 'خصم 17%',
+    badgeEn: 'Save 17%',
+    descriptionAr: 'ماكينة قهوة أوتوماتيكية بالكامل بضغط 19 بار ومطحنة حبوب مدمجة وخافق حليب لتحضير الإسبريسو واللاتيه والكابتشينو بلمسة واحدة.',
+    descriptionEn: '19-bar automatic bean-to-cup espresso machine with integrated conical burr grinder, automatic milk carafe, and touch panel.'
+  },
+  {
+    id: 'prod-5',
+    sku: 'CM-FSH-005',
+    nameAr: 'حقيبة ظهر ذكية مضادة للمياه + حذاء رياضي CloudRun',
+    nameEn: 'Urban Shield Waterproof Backpack + CloudRun Sneakers',
+    brand: 'Veloce',
+    category: 'fashion',
+    price: 3450,
+    originalPrice: 4300,
+    stock: 31,
+    rating: 4.8,
+    reviewsCount: 215,
+    featured: false,
+    badgeAr: 'باقة التوفير',
+    badgeEn: 'Value Pack',
+    descriptionAr: 'حقيبة ظهر عصرية مبطنة تتسع للابتوب 16 بوصة ومقاومة للمياه مع حذاء جري خفيف الوزن بنعل ممتص للصدمات.',
+    descriptionEn: 'Water-resistant minimalist 16-inch laptop backpack bundled with ultra-light breathable running sneakers.'
+  }
+];
+
+const initialCoupons = [
+  { code: 'CMART20', discountPercent: 20, minOrderAmount: 2000, maxDiscount: 3000, isActive: true, descriptionAr: 'خصم 20% على الطلبات فوق 2000 ج.م', descriptionEn: '20% off orders over 2,000 EGP' },
+  { code: 'WELCOME10', discountPercent: 10, minOrderAmount: 500, maxDiscount: 1500, isActive: true, descriptionAr: 'خصم 10% للعملاء الجدد', descriptionEn: '10% welcome discount' },
+  { code: 'VIP25', discountPercent: 25, minOrderAmount: 10000, maxDiscount: 5000, isActive: true, descriptionAr: 'خصم 25% للطلبات الكبرى', descriptionEn: '25% VIP discount on orders above 10,000 EGP' }
+];
+
+module.exports = { initialProducts, initialCoupons };
